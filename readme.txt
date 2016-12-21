@@ -1,11 +1,9 @@
 ## im-dispatcher(udp服务)调度服务说明文档
-## im-dispatcher 服务使用的zookeeper根路径为： "/im-dispatcher"
-## 服务器已经部署在开发环境,用户可以在开发环境下联调
-
-## 项目SVN资源地址: https://svn.gomeo2o.cn:8443/gomeo2o_dev/src/gomeo2o-IM/OA-IM/server/api/im-dispatcher
+## im-dispatcher 服务需要依赖zookeeper,使用的zookeeper根路径为： "/im-dispatcher"
 
 ## 客户端需要每五分钟至少向调度服务汇报一次服务资源,否则调度服务检测时会将该资源视为不可用资源。
 
+## TCP服务protobuf协议参见项目内/proto/路径加 msg.proto 文件，内有说明
 --------------------------------------------------------类型常量定义--------------------------------------------------------------------------------
 
 一.请求类型
